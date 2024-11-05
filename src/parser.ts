@@ -1,5 +1,5 @@
 import { InvalidSyntaxError } from "./errors.ts";
-import { Token, TokenType } from "./tokenizer.ts";
+import { type Token, TokenType } from "./tokenizer.ts";
 
 export interface Node {
   type: string;
@@ -7,7 +7,7 @@ export interface Node {
   left?: Node;
   right?: Node;
 }
-
+/** Parses an equation string into it's components. */
 export class Parser {
   private tokens: Token[];
   private position = 0;

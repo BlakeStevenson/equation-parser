@@ -1,5 +1,5 @@
 import { UndefinedVariableError, DivisionByZeroError, InvalidSyntaxError } from "./errors.ts";
-import { Node } from "./parser.ts";
+import type { Node } from "./parser.ts";
 
 export class Evaluator {
     private variables: Map<string, number>;
@@ -7,7 +7,7 @@ export class Evaluator {
     constructor(variables: Map<string, number> = new Map()) {
         this.variables = variables;
     }
-
+    /** Evaluates each piece of an equation */
     evaluate(node: Node): number {
         switch (node.type) {
             case "number":

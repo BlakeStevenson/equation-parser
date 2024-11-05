@@ -15,7 +15,7 @@ export {
   UndefinedVariableError,
   DivisionByZeroError,
 };
-
+/** Evaluates a mathematical expression and returns the result. */
 export function evaluateExpression(
   expression: string,
   variables: Map<string, number> = new Map()

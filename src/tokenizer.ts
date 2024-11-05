@@ -13,7 +13,7 @@ export interface Token {
   type: TokenType;
   value: string;
 }
-
+/** Determines what each piece of the expression is. */
 export class Tokenizer {
   private position = 0;
   private input: string;
