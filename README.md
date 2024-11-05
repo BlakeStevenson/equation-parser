@@ -15,7 +15,7 @@ A robust mathematical equation parser for Deno that supports arithmetic operatio
 ## Installation
 
 ```typescript
-import { evaluateExpression } from "https://deno.land/x/equation_parser@v1.0.0/mod.ts";
+import { evaluateExpression } from "jsr:@blake-to/equation-parser@latest";
 ```
 
 ## Quick Start
